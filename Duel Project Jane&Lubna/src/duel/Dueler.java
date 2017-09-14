@@ -19,3 +19,4 @@ public interface Dueler {
 	//return true if d has hp of given level
 	boolean determineIfOpponentIsFair(Dueler d, int hp);
 }
+

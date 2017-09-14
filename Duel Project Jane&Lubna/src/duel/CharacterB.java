@@ -1,25 +1,26 @@
 package duel;
 
-import intro.introMain;
 
 public class CharacterB implements Dueler{
-
+	
+	private int hp;
 	public CharacterB() {
 
 	}
 	
+	public String getName() {
+		return "Spider-Man";
+	}
+	
 	public void taunt() {
-		
+		System.out.println("You are so awful.Yeah!");
 	}
 
-	public String getName() {
-		return null;
-	}
 	public void setStartingHP(int hp){
-		
+		this.hp=hp
 	}
 	public int getHP() {
-		return 0;
+		return hp;
 	}
 }
 

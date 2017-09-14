@@ -37,28 +37,17 @@ public class Duel {
 		pause(2000);
 		d1.setStartingHP(dueler1HP);
 		d2.setStartingHP(dueler2HP);
-<<<<<<< HEAD
-=======
+
 		
-
-
 		boolean d1SaysD2Fair = d1.determineIfOpponentIsFair(d2, 100);
 		boolean d2SaysD1Fair = d2.determineIfOpponentIsFair(d1, 100);
-		
 
->>>>>>> branch 'master' of https://github.com/lkhalid0095/Duel-Project-Lubna-Jane-.git
 		
 		boolean d1SaysD2Fair = d1.determineIfOpponentIsFair(d2, 100);
 		boolean d2SaysD1Fair = d2.determineIfOpponentIsFair(d1, 100);
 	}
-	
-<<<<<<< HEAD
-=======
-	
-	
->>>>>>> branch 'master' of https://github.com/lkhalid0095/Duel-Project-Lubna-Jane-.git
-	/**
-	 * This method involves "Threads" which we will get to much later in the year, essentially, it
+
+	 /** This method involves "Threads" which we will get to much later in the year, essentially, it
 	 * creates a pause in the execution of the program, which makes it more dramatic
 	 * @param time
 	 */

@@ -41,7 +41,7 @@ public class CharacterA implements Dueler{
 	public boolean isCharacter
 	public int getAction(Object caller) {
 		// TODO Auto-generated method stub
-		return 0;
+		return 1;
 	}
 
 	public void hit(Object caller) {

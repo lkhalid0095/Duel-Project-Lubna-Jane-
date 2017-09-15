@@ -30,4 +30,14 @@ public class CharacterA implements Dueler{
 
 		return false;
 	}
+
+	public int getAction(Object caller) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public void hit(Object caller) {
+		// TODO Auto-generated method stub
+		
+	}
 }	

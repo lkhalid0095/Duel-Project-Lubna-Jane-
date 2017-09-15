@@ -22,6 +22,20 @@ public class CharacterB implements Dueler{
 	public int getHP() {
 		return hp;
 	}
+
+	public boolean determineIfOpponentIsFair(Dueler d, int hp) {
+		return false;
+	}
+
+	public int getAction(Object caller) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public void hit(Object caller) {
+		// TODO Auto-generated method stub
+		
+	}
 }
 
 

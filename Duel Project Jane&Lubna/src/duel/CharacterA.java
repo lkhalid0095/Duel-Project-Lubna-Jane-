@@ -2,35 +2,43 @@ package duel;
 
 public class CharacterA implements Dueler{
 
+	private int hp;
 	public CharacterA(){
 		//In Java, fields are instantiated in a constructor
 	
 	}
 	
 	public void taunt() {
-		
+		System.out.println("You can never beat me!");
 	}
 
 	public String getName() {
 		
-		return null;
+		return "WonderWoman";
 	}
 
 	public void setStartingHP(int hp) {
 		
-		
+		this.hp=hp;
 	}
 
 	public int getHP() {
 		
-		return 0;
+		return hp;
 	}
 
 	public boolean determineIfOpponentIsFair(Dueler d, int hp) {
 
-		return false;
+		if (d.getHP()==hp)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
 	}
-
+	public boolean isCharacter
 	public int getAction(Object caller) {
 		// TODO Auto-generated method stub
 		return 0;

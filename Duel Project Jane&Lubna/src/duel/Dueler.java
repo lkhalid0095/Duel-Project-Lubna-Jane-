@@ -7,7 +7,7 @@ public interface Dueler {
 	//later: the taunt must be different each time the method is called
 	void taunt();
 	
-	//returns the name of the Dueler
+	//returns the ame of the Dueler
 	String getName();
 	
 	//set the value of a field. Write this in such a way that it can only be called once (by the Duel, at the start)

@@ -17,7 +17,7 @@ public class CharacterB implements Dueler{
 	}
 
 	public void setStartingHP(int hp){
-		this.hp=hp
+		this.hp=hp;
 	}
 	public int getHP() {
 		return hp;

@@ -39,15 +39,15 @@ public class Duel {
 	
 	public void dukeItOut(){
 		System.out.print(d1.getName());
-		pause(600);
+//		pause(600);
 		System.out.print(" vs ");
-		pause(600);
+//		pause(600);
 		System.out.println(d2.getName());
-		pause(600);
+//		pause(600);
 		d1.taunt();
-		pause(2000);
+//		pause(2000);
 		d2.taunt();
-		pause(2000);
+//		pause(2000);
 		d1.setStartingHP(dueler1HP);
 		d2.setStartingHP(dueler2HP);
 		
@@ -65,11 +65,11 @@ public class Duel {
 			
 			if (d1SaysD2Fair == correctlyDoneD2 && d2SaysD1Fair == correctlyDoneD1){ 
 				//print a taunt that is different than last time
-				pause(2000);
+//				pause(2000);
 				d1.taunt();
-				pause(2000);
+//				pause(2000);
 				d2.taunt();
-				pause(2000);
+//				pause(2000);
 				startFighting();
 			}else{
 				System.out.println("It looks like the duelers can't determine if the other is cheating.");
@@ -95,11 +95,13 @@ public class Duel {
 			System.out.println("ROUND "+(startingRounds-rounds));
 			rounds --;
 			int d1Action = d1.getAction(this);
-			int d2Action = d2.getAction(this);
+			int d2Action = d2.getAction(this);	
+			
 			if(!(d1Action >= 0 && d2Action >= 0 && d1Action <4 && d2Action < 4)){
 				System.out.println("Someone is trying to complete an action that doesn't exist. Start over.");
 				return;
 			}
+			
 			System.out.println(d1.getName()+": "+dueler1HP + " and " + d2.getName() + ": " + dueler2HP+".");
 			System.out.println(d1.getName()+" "+outcomes[d1Action] + " and " + d2.getName() + " " + outcomes[d2Action]+".");
 			if (d1Action == LOADING){

@@ -33,13 +33,19 @@ public class CharacterB implements Dueler{
 		}
 	}
 
+	public boolean isDuel(Object c) {
+		return c instanceof Duel;
+	}
+	
 	public int getAction(Object caller) {
-		// TODO Auto-generated method stub
-		return 0;
+			return (int) (Math.random() * 3);
+
 	}
 
 	public void hit(Object caller) {
-		// TODO Auto-generated method stub
+		if(isDuel(caller)) {
+			this.hp= hp-10;
+		}
 		
 	}
 }

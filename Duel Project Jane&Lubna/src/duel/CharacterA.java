@@ -33,19 +33,25 @@ public class CharacterA implements Dueler{
 		{
 			return true;
 		}
-		else
-		{
-			return false;
-		}
+		return false;
 	}
-	public boolean isCharacter
+//	public boolean isCharacterA(Object c) {
+//		return c instanceof CharacterA;
+//	}
+	
+	public boolean isDuel(Object c) {
+		return c instanceof Duel;
+	}
+	
 	public int getAction(Object caller) {
-		// TODO Auto-generated method stub
-		return 1;
+			return (int) (Math.random() * 3);
+
 	}
 
 	public void hit(Object caller) {
-		// TODO Auto-generated method stub
+		if(isDuel(caller)) {
+			this.hp= hp-10;
+		}
 		
 	}
 }	

@@ -81,3 +81,29 @@ public class CharacterA implements Dueler{
 		
 	}
 }	
+/*  int keywordLength=keyword.length(); String letter1; String letter2;
+if(psn==0) {
+	   letter1=s.substring(keywordLength, keywordLength+1);
+	   if(letter1.compareTo("a")<0)
+	   {
+		   return true;
+	   }
+	   return false;	   
+}
+if(psn+keywordLength==s.length()) {
+	   letter1=s.substring(psn-1, psn);
+	   if(letter.compareTo('a')<0)
+	   {
+		   return true;
+	   }
+	   return false;
+	   If()
+	   {
+		   
+	   }
+}
+letter1=s.substring(psn-1, psn);
+letter2=s.substring(keywordLength+psn, keywordLength+psn+1);
+
+return true;
+}*/

@@ -104,6 +104,26 @@ if(psn+keywordLength==s.length()) {
 }
 letter1=s.substring(psn-1, psn);
 letter2=s.substring(keywordLength+psn, keywordLength+psn+1);
-
+if(letter1.compareTo("a")>=0||letter2.compareTo("a")>=0)
+{
+	return false;
+}
 return true;
-}*/
+}
+
+
+
+if(!psn<4)
+{
+	String negation1=s.substring(psn-3, psn-1);
+	String negation1=s.substring(psn-4, psn-1);
+	if(negation1.equals("no")||negation2.equals("not")
+	{
+		return false;
+	}
+	}
+	return true;
+	}
+}
+
+*/

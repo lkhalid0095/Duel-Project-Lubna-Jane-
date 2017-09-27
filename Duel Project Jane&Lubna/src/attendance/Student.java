@@ -4,49 +4,66 @@ public class Student implements Attendee{
 
 	private String firstName;
 	private String lastName;
-	private boolean ispresent;
+	private boolean present;
 	public Student(String first, String last) { 
-		firstName= first;
-		lastName = last;
+		this.firstName= first;
+		this.lastName = last;
+		this.present=false;
 	}
 	public boolean isPresent() {
 		
-		return false;
+		return present;
 	}
 
 	public void setPresent(boolean present) {
-		if(isPresent()) {
-			present=true;
-		}
-		else
-		{
-			present=false;
-		}
+		this.present=present;
 	}
 
 	public String getFirstName() {
-		// TODO Auto-generated method stub
-		return null;
+		return firstName;
 	}
 
 	public String getLastName() {
-		// TODO Auto-generated method stub
-		return null;
+		return lastName;
 	}
 
 	public boolean mathces(String first, String last) {
-		// TODO Auto-generated method stub
-		return false;
+		
+		return first.toLowerCase().equals(firstName.toLowerCase())&&last.toUpperCase().equals(lastName.toUpperCase());
 	}
 
 	public boolean matches(String last) {
-		// TODO Auto-generated method stub
-		return false;
+		return last.toUpperCase().equals(lastName.toUpperCase());
 	}
 
 	public String getReportString() {
-		// TODO Auto-generated method stub
-		return null;
+		String report = lastName;
+		if(report.length()>20)
+		{
+			report=report.substring(0,17)+"...";
+		}
+		while(report.length()<20)
+		{
+			report+=" ";
+		}
+		report+=firstName;
+		if(report.length()>40)
+		{
+			report=report.substring(0,37)+"...";
+		}
+		while(report.length()<40)
+		{
+			report+=" ";
+		}
+		if(present)
+		{
+			report+="PRESENT\n";
+		}
+		else
+		{
+			report+="ABSENT\n";
+		}
+		return report;
 	}
 
 }

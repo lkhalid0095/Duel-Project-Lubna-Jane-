@@ -97,10 +97,6 @@ if(psn+keywordLength==s.length()) {
 		   return true;
 	   }
 	   return false;
-	   If()
-	   {
-		   
-	   }
 }
 letter1=s.substring(psn-1, psn);
 letter2=s.substring(keywordLength+psn, keywordLength+psn+1);
